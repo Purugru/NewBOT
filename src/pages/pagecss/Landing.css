@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+#teal-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#6fa2d0;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1; /* Set a higher z-index to bring it to the front */
+}
+
+.transparent-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2; /* Place it above the teal section */
+}
+
+#white-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color:	#052c4f;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2; /* Place it above the teal section */
+}
+
+#text-and-buttons {
+  position: absolute;
+  top: 40%; /* Adjusted top position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hello-text {
+  color: 	#6fa2d0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #6fa2d0;
+  color: white;
+  padding: 15px 35px; /* Adjusted padding for buttons */
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em; /* Adjusted font size for buttons */
+  font-weight: bold;
+}
